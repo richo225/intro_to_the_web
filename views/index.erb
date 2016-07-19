@@ -1,7 +1,32 @@
+
+
+<style>
+  .cat-img {
+    border: 10px groove gold;
+    width: 450px;
+    margin: 50px auto;
+    display: block;
+  }
+
+  form {
+    display: block;
+    text-align: center;
+  }
+​</style>
+
+<% if @name %>
+
 <h1>
   My name is <%= @name %>
 </h1>
 
-<div style='border: 10px groove gold'>
+<% end %>
+
+<form action="/named-cat">
+   <input type="text" name="name">
+   <input type="submit" value="submit">
+</form>
+
+<div class="cat-img">
   <img src='http://bit.ly/1eze8aE'>
 </div>
