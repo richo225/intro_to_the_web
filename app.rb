@@ -20,7 +20,5 @@ get "/secret/answer" do
 end
 
 get "/cat" do
-  "<div style='border: 10px groove gold'>
-    <img src='http://bit.ly/1eze8aE'>
-  </div>"
+  erb(:index)
 end
